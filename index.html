@@ -1,48 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kirpatrick's Bio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirpatrick Dorsey's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <h1>Kirpatrick Dorsey</h1>
-  <img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;" src="https://raw.githubusercontent.com/kirpatrick/kirpatrick.github.io/master/myAvatar.jpg" alt="Kirpatrick Substitute"
-  title="Stand in for Kirpatrick"
-  width="131" height="175">
-<p>
-  Lorem ipsum dolor sit amet, has ex vivendum urbanitas tincidunt. Ei alterum dolorum delicatissimi vix. Duo te civibus commune propriae, nostro similique constituam te vix. Modus fuisset mentitum cu vis, ei sint referrentur eos. Eu corpora intellegam ius, cum summo perpetua pertinacia et. Qui option oporteat ne, nam cu munere laudem dignissim, id odio mazim intellegebat has.
-</p>
 
-<p>
-  In equidem nominati inimicus has. Sumo aliquip te sit, eum ex zril ponderum. At semper gubergren vel. Eirmod legendos ut est.
-</p>
+<div class="header">
+  <div class="left-controls">
+    <span class="menu-btn" onclick="toggleSidebar()">☰</span>
+    <h2>Kirpatrick Dorsey</h2>
+  </div>
+  <button id="themeToggle" class="toggle-btn" onclick="toggleTheme()">Dark Theme</button>
+</div>
 
-<h3>Unordered Lists</h3>
-		<ul>
-			<li><a href="about.html">About</a></li>
-			<li><a href="movies.html">Movies</a></li>
-		</ul>
+<div class="sidebar" id="sidebar">
+  <h3>Analytics Portfolio</h3>
+    <h4>Higher Education</h4>
+      <a href="#">Higher Ed Project 1</a>
+      <a href="#">Higher Ed Project 2</a>
+    <h4>Healthcare</h4>
+      <a href="#">Healthcare Project 1</a>
+      <a href="#">Healthcare Project 2</a>
+</div>
 
-    <table>
-			<tr>
-				<th></th><!-- table heading-->
-				<th scope="col">Saturday</th>
-				<th scope="col">Sunday</th>
-			</tr>
-			<tr>
-				<th scope="row">Tickets sold:</th>
-				<td>120</td>
-				<td>135</td>
-			</tr>
-			<tr>
-				<th scope="row">Total sales:</th>
-				<td>$600</td>
-				<td>$675</td>
-			</tr>
-		</table>
-  
+<div class="content">
+  <h1>Welcome</h1>
+  <p>This layout is responsive and includes a dark/light theme toggle.</p>
+</div>
 
+<script src="script.js"></script>
 </body>
-
 </html>
