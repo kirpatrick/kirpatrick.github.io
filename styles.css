@@ -27,6 +27,11 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* ================================
    HEADER
 ================================ */
@@ -171,6 +176,11 @@ body {
 ================================ */
 @media (max-width: 768px) {
   .sidebar {
+    position: fixed; /* or absolute */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
     transform: translateX(-100%);
   }
 
@@ -180,6 +190,7 @@ body {
 
   .content {
     margin-left: 0;
+    width: 100%;
   }
 }
 
@@ -198,11 +209,11 @@ body {
 /* ================================
    PDF VIEWER
 ================================ */
-.pdf-viewer {
+/* .pdf-viewer {
   width: 100%;
   height: 600px;
   border: none;
   margin-top: 10px;
   margin-bottom: 30px;
   background: var(--content-bg);
-}
+} */
