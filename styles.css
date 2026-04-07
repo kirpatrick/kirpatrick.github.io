@@ -27,10 +27,10 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-body, html {
+/* body, html {
   width: 100%;
   overflow-x: hidden;
-}
+} */
 
 /* ================================
    HEADER
