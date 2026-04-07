@@ -18,20 +18,159 @@
 </div>
 
 <div class="sidebar" id="sidebar">
-  <h3>Analytics Portfolio</h3>
-    <h4>Higher Education</h4>
-      <a href="#">Higher Ed Project 1</a>
-      <a href="#">Higher Ed Project 2</a>
-    <h4>Healthcare</h4>
-      <a href="#">Healthcare Project 1</a>
-      <a href="#">Healthcare Project 2</a>
-</div>
 
+  <!-- LEFT NAVIGATION BAR -->
+  <a href="#top" class="root-link">Analytics Portfolio</a>
+  <hr />
+
+  <!-- GROUP 1 TOPIC -->
+  <div class="tree-item">
+    <div class="tree-parent" onclick="toggleTree(this)">
+      Independent Research
+    </div>
+    <!-- GROUP 2 SUB-TOPICS -->
+    <ul class="tree-children">
+      <li><a href="#section1">US Higher Education Degrees by County</a></li>
+      <li><a href="#section2">US Annual Employment by County</a></li>
+    </ul>
+  </div>
+  
+  <!-- GROUP 2 TOPIC -->
+  <div class="tree-item">
+    <div class="tree-parent" onclick="toggleTree(this)">
+      Graduate Project
+    </div>
+    <!-- GROUP 1 SUB-TOPICS -->
+    <ul class="tree-children">
+      <li><a href="#section4">KNIME Sentiment Analysis</a></li>
+    </ul>
+  </div>
+  
+</div>
+<!-- END LEFT NAVIGATION BAR -->
+
+
+<!-- MAIN PAGE CONTENT -->
 <div class="content">
   <h1>Welcome</h1>
-  <p>This page is under construction.</p>
+  <!-- <p>This site is under construction.</p> -->
+  <hr />
+  <br />
+
+  <!-- ---------------------------------------------------------------------------- -->
+  <!-- GROUP 1 SUB-TOPIC 1 -->
+  <h2 id="section1">US Higher Education Degrees by County</h2>
+  <p>This work-in-progress seeks to understand how post high school education achievement matches actual employment in the United States.</p>
+
+  <div class='tableauPlaceholder' id='viz1775591578413' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='Education ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USHigherEducationDegreesbyCounty&#47;Education&#47;1_rss.png' style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> 
+      <param name='site_root' value='' />
+      <param name='name' value='USHigherEducationDegreesbyCounty&#47;Education' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USHigherEducationDegreesbyCounty&#47;Education&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+    </object>
+  </div>                
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1775591578413');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if ( divElement.offsetWidth > 1000 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.90)+'px';}
+    else if ( divElement.offsetWidth > 700 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.90)+'px';}
+    else { vizElement.style.width='100%';vizElement.style.height='2427px';}
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  <!-- GROUP 1 SUB-TOPIC 2 -->
+  <h2 id="section2">US Annual Employment by County</h2>
+  <p>Content…</p>
+  <div class='tableauPlaceholder' id='viz1775599788608' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='Employment ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USAnnualEmploymentbyCounty&#47;Employment&#47;1_rss.png' style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='USAnnualEmploymentbyCounty&#47;Employment' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USAnnualEmploymentbyCounty&#47;Employment&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1775599788608');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if ( divElement.offsetWidth > 1000 ) { 
+      vizElement.style.minWidth='420px';
+      vizElement.style.maxWidth='850px';
+      vizElement.style.width='100%';
+      vizElement.style.minHeight='587px';
+      vizElement.style.maxHeight='987px';
+      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+    } 
+    else if ( divElement.offsetWidth > 700 ) { 
+      vizElement.style.minWidth='420px';
+      vizElement.style.maxWidth='850px';
+      vizElement.style.width='100%';
+      vizElement.style.minHeight='587px';
+      vizElement.style.maxHeight='987px';
+      vizElement.style.height=(divElement.offsetWidth*0.9)+'px';
+      } 
+    else { vizElement.style.width='100%';vizElement.style.height='2027px';}
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  </a>
+  <p><strong>GitHub Project:  </strong><a href="https://github.com/kirpatrick/higher-ed" target="_blank" rel="noopener noreferrer">Higher education labor market alignment</a></p>
+  <hr />
+  <br />
+
+  <!-- ---------------------------------------------------------------------------- -->
+  <!-- GROUP 2 SUB-TOPIC 1 -->  
+  <h2 id="section4">KNIME Sentiment Analysis</h2>
+  <p>This work demonstrates use of the KNIME Data Analytics and Workflow Platform to conduct sentiment analysis.  2000 movie reviews were analyzed, comparing three different scientific approaches for extracting individual opinion or feelings about a film.</p>
+  <p>While Gen AI can determine positive and negative sentiment with 96% accuracy, machine learning is well suited to the task, providing consistently reproducible results (96.25% accuracy) and better return on investment, not requiring the additional processing expense of Gen AI.  </p>
+  <a href="https://github.com/kirpatrick/knime-movie-reviews-sentiments" target="_blank" rel="noopener noreferrer" class="image-link">
+  <img src="images//KNIME-ML-Sentiment-Analysis.png" alt="Sentiment Analysis" class="responsive-image">
+  </a>
+  <p><strong>GitHub Project:  </strong><a href="https://github.com/kirpatrick/knime-movie-reviews-sentiments" target="_blank" rel="noopener noreferrer">KNIME Moview Review Sentiment Analysis</a></p>
+  <hr />
+  <br />
+
+  <!-- ---------------------------------------------------------------------------- -->
+
 </div>
+
+
+
 
 <script src="script.js"></script>
 </body>
 </html>
+
+

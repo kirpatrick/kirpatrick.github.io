@@ -17,3 +17,8 @@ function toggleTheme() {
     btn.textContent = "Dark Theme";
   }
 }
+
+function toggleTree(parentElement) {
+  const item = parentElement.parentElement;
+  item.classList.toggle("open");
+}

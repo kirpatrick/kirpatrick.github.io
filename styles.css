@@ -1,3 +1,6 @@
+/* ================================
+   THEME VARIABLES
+================================ */
 :root {
   --header-bg: #1e293b;
   --sidebar-bg: #334155;
@@ -5,7 +8,9 @@
   --content-bg: #f8fafc;
   --content-text: #0f172a;
 }
-
+/* ================================
+   GLOBAL
+================================ */
 body.dark {
   --header-bg: #0f172a;
   --sidebar-bg: #1e293b;
@@ -22,6 +27,9 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+/* ================================
+   HEADER
+================================ */
 .header {
   position: fixed;
   top: 0;
@@ -60,6 +68,9 @@ body {
   color: var(--text-color);
 }
 
+/* ================================
+   SIDEBAR
+================================ */
 .sidebar {
   position: fixed;
   top: 60px;
@@ -71,6 +82,8 @@ body {
   padding-top: 20px;
   overflow-y: auto;
   transition: transform 0.3s ease;
+
+
 }
 
 .sidebar a {
@@ -84,12 +97,78 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.content {
-  margin-top: 60px;
-  margin-left: 220px;
-  padding: 20px;
+/* Root link */
+.root-link {
+  display: block;
+  padding: 12px 20px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
+/* Tree parent */
+.tree-parent {
+  padding: 12px 20px;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tree-parent:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Arrow rotation */
+.tree-item.open .arrow {
+  transform: rotate(90deg);
+}
+
+/* Children list */
+.tree-children {
+  list-style: none;
+  padding-left: 30px;
+  margin: 0;
+  display: none;
+}
+
+.tree-item.open .tree-children {
+  display: block;
+}
+
+.tree-children li a {
+  display: block;
+  padding: 8px 0;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.tree-children li a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   MAIN CONTENT
+================================ */
+.content {
+  margin-top: 50px;
+  margin-left: 230px; /*orig 220px;*/
+  margin-right: 250px; /*orig 220px;*/
+  padding: 50px;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content section {
+  scroll-margin-top: 80px; /* adjust based on header height */
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
 @media (max-width: 768px) {
   .sidebar {
     transform: translateX(-100%);
@@ -102,4 +181,28 @@ body {
   .content {
     margin-left: 0;
   }
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* optional */
+}
+
+.image-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* ================================
+   PDF VIEWER
+================================ */
+.pdf-viewer {
+  width: 100%;
+  height: 600px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: var(--content-bg);
 }
