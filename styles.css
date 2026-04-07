@@ -175,14 +175,13 @@ body, html {
    RESPONSIVE
 ================================ */
 @media (max-width: 768px) {
+
   .content {
     margin-left: 0;
     margin-right: 0;   /* ← THIS is the missing piece */
     padding: 20px;     /* optional: reduces cramped feel */
     width: 100%;
   }
-}
-
 
   .sidebar.open {
     transform: translateX(0);
